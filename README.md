@@ -40,7 +40,7 @@ User can overwrite the following configurations by adding flags in the User - Se
 
 
 * Custom
-  The above default configurations can be changes by pasting the new configurations into the settings at `Preferences -> Package Settings -> Extended Tab Switcher -> Settings - User`
+  - The above default configurations can be changes by pasting the new configurations into the settings at `Preferences -> Package Settings -> Extended Tab Switcher -> Settings - User`
 
 
 
