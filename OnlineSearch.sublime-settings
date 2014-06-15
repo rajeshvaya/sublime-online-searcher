@@ -1,0 +1,39 @@
+{
+	// domains to search
+	"domains" : 
+	[
+		{
+			"key": "default",
+			"url": "https://www.google.com/search?q={{search_query}}"
+		},
+		{
+			"key": "google",
+			"url": "https://www.google.com/search?q={{search_query}}"
+		},
+		{
+			"key": "github",
+			"url": "https://github.com/search?q={{search_query}}"
+		},
+		{
+			"key": "youtube",
+			"url": "http://www.youtube.com/results?search_query={{search_query}}"
+		},
+		{
+			"key": "php",
+			"url": "http://www.php.net/manual-lookup.php?pattern={{search_query}}&scope=quickref"
+		},
+		{
+			"key": "jquery",
+			"url": "http://api.jquery.com/?s={{search_query}}"
+		},
+		{
+			"key": "stackoverflow",
+			"url": "http://stackoverflow.com/search?q={{search_query}}"
+		},
+		{
+			"key": "image",
+			"url": "https://www.google.com/search?q={{search_query}}&tbm=isch"
+		}
+	] 
+}
+

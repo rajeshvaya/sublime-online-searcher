@@ -1,0 +1,5 @@
+[
+    { "keys": ["ctrl+alt+o"], "command": "online_search_from_input" },
+    { "keys": ["ctrl+alt+s"], "command": "online_search_from_selection" }
+]
+	
