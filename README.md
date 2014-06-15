@@ -10,7 +10,7 @@ You can also add your own custom domains, search engines and other documentation
 ## Key Bindings
 
 * On pressing `ctrl+alt+o` you will be prompted to input the search string 
-* On pressing `ctrl+alt+i` search the default domain with the selected text
+* On pressing `ctrl+alt+s` search the default domain with the selected text
 
 
 You can change the default key binding at `Preferences -> Package Settings -> Extended Tab Switcher -> Key Bindings User`

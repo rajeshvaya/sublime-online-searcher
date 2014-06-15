@@ -1,5 +1,6 @@
 import sublime, sublime_plugin, webbrowser
 
+# function called when input box is called
 class OnlineSearchFromInputCommand(sublime_plugin.TextCommand):
 	def run(self, edit):
 		search_text = ''
@@ -9,7 +10,8 @@ class OnlineSearchFromInputCommand(sublime_plugin.TextCommand):
 
 		sublime.active_window().show_input_panel('Search online for', search_text,s.search, None, None)
 	
-			
+
+# function called when selected text is to be searched
 class OnlineSearchFromSelectionCommand(sublime_plugin.TextCommand):
 	def run(self, edit):
 		search_text = ''
@@ -25,8 +27,7 @@ class OnlineSearchFromSelectionCommand(sublime_plugin.TextCommand):
 		s.search(search_text)
 			
 
-
-
+# The online searcher class 
 class OnlineSearcher(object):
 	settings = []
 	domains = []
@@ -40,6 +41,7 @@ class OnlineSearcher(object):
 		if search == '':
 			return
 
+		# clean the key and text to be searched 
 		search_key = search[:search.find(":")].strip() # extract the key out of the search input
 		search_string = search[search.find(":")+1:].strip() # exclude the ":" and trim the spaces
 		
