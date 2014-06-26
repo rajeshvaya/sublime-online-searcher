@@ -62,7 +62,6 @@ User can overwrite the following configurations by adding flags in the User - Se
       2. Unzip and rename the folder to `OnlineSearcher`
       3. Copy the folder into `Packages` directory, which you can find using the menu item `Sublime Text -> Preferences -> Browse Packages...`
 
-***
 
 
 ## License
