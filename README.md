@@ -43,6 +43,27 @@ User can overwrite the following configurations by adding flags in the User - Se
   - The above default configurations can be changed or new configs can be added in `Preferences -> Package Settings -> Extended Tab Switcher -> Settings - User`
 
 
+## How to Install
+
+* ### Via Package Control
+
+      The easiest way to install is using [Sublime Package Control](https://sublime.wbond.net), where OnlineSearch is listed as `OnlineSearch`.
+  
+      1. Open Command Palette using menu item `Tools -> Command Palette...` (<kbd>⇧</kbd><kbd>⌘</kbd><kbd>P</kbd> on Mac)
+      2. Choose `Package Control: Install Package`
+      3. Find `OnlineSearch` and hit <kbd>Enter</kbd>
+
+
+* ### Manual
+  
+      You can also install the theme manually:
+      
+      1. [Download the .zip](https://github.com/rajeshvaya/sublime-online-searcher/archive/master.zip)
+      2. Unzip and rename the folder to `OnlineSearcher`
+      3. Copy the folder into `Packages` directory, which you can find using the menu item `Sublime Text -> Preferences -> Browse Packages...`
+
+***
+
 
 ## License
 
