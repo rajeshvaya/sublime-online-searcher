@@ -9,6 +9,39 @@ class OnlineSearchFromInputCommand(sublime_plugin.TextCommand):
 			search_text = self.view.substr(selection)
 
 		sublime.active_window().show_input_panel('Search online for', search_text,s.search, None, None)
+		# items = []
+		# for itm in s.settings.get('domains'):
+		# 	print itm
+		# 	items.insert(0, itm["key"]+": "+search_text)
+
+		# sublime.active_window().show_quick_panel(items, s.search, sublime.MONOSPACE_FONT);
+
+# function called when selection search performed by list
+class OnlineSearchFromListCommand(sublime_plugin.TextCommand):
+	def process(self, choice):
+		s = OnlineSearcher()
+		search_text = ''
+
+		for selection in self.view.sel():
+			search_text = self.view.substr(selection)
+
+		print s.domains[choice]
+		search_text = s.domains[choice]["key"] + ": " + search_text
+
+		s.search(search_text)
+
+	def run(self, edit):
+		
+		s = OnlineSearcher()
+		
+
+		# sublime.active_window().show_input_panel('Search online for', search_text,s.search, None, None)
+		items = []
+		for itm in s.domains:
+			items.append(itm["key"])
+
+		sublime.active_window().show_quick_panel(items, self.process, sublime.MONOSPACE_FONT);
+		
 	
 
 # function called when selected text is to be searched
