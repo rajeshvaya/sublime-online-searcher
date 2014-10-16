@@ -55,6 +55,7 @@ class OnlineSearchFromSelectionCommand(sublime_plugin.TextCommand):
 
 		# if nothing is selected then search on the active word
 		if search_text == '':
+			sublime.message_dialog("Select some text first")
 			return
 
 
