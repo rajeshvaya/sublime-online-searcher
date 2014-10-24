@@ -17,7 +17,7 @@ class OnlineSearchFromListCommand(sublime_plugin.TextCommand):
 		# if cancelled, do nothing
 		if choice == -1:
 			return
-			
+
 		s = OnlineSearcher()
 		search_text = ''
 
@@ -36,6 +36,7 @@ class OnlineSearchFromListCommand(sublime_plugin.TextCommand):
 			search_text = self.view.substr(selection)
 
 		if search_text == '':
+			sublime.status_message("Select some text first")
 			return
 		# sublime.active_window().show_input_panel('Search online for', search_text,s.search, None, None)
 		items = []
